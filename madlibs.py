@@ -1,6 +1,6 @@
 #GLOBAL VARIABLES
 #a list containing the user inputs for call in the f-string of the story
-madlibs = ['one', 'two', 'three']
+madlibs = []
 
 #the core story which will have gaps for insertion
 #a story originally written by Aesop
@@ -9,9 +9,6 @@ story = """A %s was driving a wagon along a country lane, when the %s sank down 
  Hercules, it is said, appeared and thus addressed him:
  \'Put your shoulders to the wheels, my man. Goad on your bullocks, and never more pray to me for help,
 until you have done your best to help yourself, or depend upon it you will henceforth pray in vain.\'""" 
-
-#FOR LOOPING THOUGH LIST
-print(story % tuple(madlibs))
 
 #FUNCTIONS
 #reads user input
@@ -24,24 +21,41 @@ def add(item):
     madlibs.append(item)
 
 # collects and adds user nouns
-def nouns(item):
+def nouns():
     new_noun = user_input("Please input a noun: ")
     add(new_noun)
 
 # collects and adds verbs
-def verbs(item):
+def verbs():
     new_verb = user_input("Please input a verb: ")
     add(new_verb)
 
 # collects and adds adjectives
-def adjectives(new_adjective):
+def adjectives():
     new_adjective = user_input("Please input a adjective: ")
     add(new_adjective)
 
 # collects and adds number
-def num(new_num):
+def nums():
     new_num = user_input("Please input a number: ")
     add(int(new_num))
 
 
+
+
 #TEST FUNCTION
+print("Welcome to Mad Libs!\nLet's begin\nPlease follow the following prompts")
+nouns()
+nouns()
+nouns()
+
+
+
+
+#running = True
+#while running:
+#    enter = user_input("Press enter to continue: ")
+#    running = #insert more code
+
+print(story % tuple(madlibs))
+
