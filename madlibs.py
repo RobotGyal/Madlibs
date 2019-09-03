@@ -23,6 +23,25 @@ def user_input(prompt):
 def add(item):
     madlibs.append(item)
 
+# collects and adds user nouns
+def nouns(item):
+    new_noun = user_input("Please input a noun: ")
+    add(new_noun)
+
+# collects and adds verbs
+def verbs(item):
+    new_verb = user_input("Please input a verb: ")
+    add(new_verb)
+
+# collects and adds adjectives
+def adjectives(new_adjective):
+    new_adjective = user_input("Please input a adjective: ")
+    add(new_adjective)
+
+# collects and adds number
+def num(new_num):
+    new_num = user_input("Please input a number: ")
+    add(int(new_num))
 
 
 #TEST FUNCTION
