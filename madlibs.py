@@ -3,11 +3,14 @@
 
 
 #FUNCTIONS
+#reads user input
+def user_input(prompt):
+    user_input = input(prompt)
+    return user_input
 
-
-
-#TEST FUNCTION
-
+# add user_input to madlibs list
+def add(item):
+    madlibs.append(item)
 
 
 #STORY
@@ -18,3 +21,6 @@ story = ""
 #MADLIBS
 #a list containing the user inputs for call in the f-string of the story
 madlibs = []
+
+
+#TEST FUNCTION
