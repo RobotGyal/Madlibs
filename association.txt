@@ -1,6 +1,6 @@
 F String Associations
 
-0 = 
-1 =
-2 = 
+0 = nouns
+1 = verbs
+2 = adjectives
 3 = 
