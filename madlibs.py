@@ -31,24 +31,36 @@ def add(item):
 def nouns():
     print(colors.yellow)
     new_noun = user_input("\nPlease input a noun: \n")
+    #if(new_noun == 'Q' or 'q'):
+        #running = False
+    #else:
     add(new_noun)
 
 # collects and adds verbs
 def verbs():
     print(colors.yellow)
     new_verb = user_input("\nPlease input a verb: \n")
+    #if(new_verb == 'Q' or 'q'):
+        #running = False
+    #else:
     add(new_verb)
 
 # collects and adds adjectives
 def adjectives():
     print(colors.yellow)
     new_adjective = user_input("\nPlease input a adjective: \n")
+    #if(new_adjective == 'Q' or 'q'):
+        #running = False
+    #else:
     add(new_adjective)
 
 # collects and adds number
 def nums():
     print(colors.yellow)
     new_num = user_input("\nPlease input a number: \n")
+    #if(new_num == 'Q' or 'q'):
+        #running = False
+    #else:
     add(int(new_num))
 
 #run
@@ -73,6 +85,6 @@ while running:
     enter = user_input("Press enter to continue: \n\n")
     running = run()
 
-print("\n\n", colors.green, "Wonderful!\nHere is your story!\n")
-print("\n\n",colors.pink,story % tuple(madlibs))
+print("\n\n", colors.green, "Wonderful!\nHere is your story!\nThank you for playing\n")
+print("\n\n", colors.pink, story % tuple(madlibs))
 
