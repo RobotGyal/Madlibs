@@ -2,6 +2,14 @@
 #a list containing the user inputs for call in the f-string of the story
 madlibs = []
 
+class colors:
+    purple = '\033[30m'
+    green = '\033[32m'
+    yellow = '\033[93m'
+    pink = '\033[95m'
+    grey = '\033[37m'
+
+
 #the core story which will have gaps for insertion
 #a story originally written by Aesop - The Flies and the Honey
 story = """%s Flies were attracted to a jar of %s which had been overturned in a housekeeper's %s,
@@ -21,45 +29,50 @@ def add(item):
 
 # collects and adds user nouns
 def nouns():
-    new_noun = user_input("Please input a noun: ")
+    print(colors.yellow)
+    new_noun = user_input("\nPlease input a noun: \n")
     add(new_noun)
 
 # collects and adds verbs
 def verbs():
-    new_verb = user_input("Please input a verb: ")
+    print(colors.yellow)
+    new_verb = user_input("\nPlease input a verb: \n")
     add(new_verb)
 
 # collects and adds adjectives
 def adjectives():
-    new_adjective = user_input("Please input a adjective: ")
+    print(colors.yellow)
+    new_adjective = user_input("\nPlease input a adjective: \n")
     add(new_adjective)
 
 # collects and adds number
 def nums():
-    new_num = user_input("Please input a number: ")
+    print(colors.yellow)
+    new_num = user_input("\nPlease input a number: \n")
     add(int(new_num))
 
 #run
 def run():
-    print("Welcome to Mad Libs!\nLet's begin\nPlease follow the following prompts")
+    print(colors.yellow,"Welcome to Mad Libs!\nLet's begin\nPlease follow the following prompts\n")
     nums()
     nouns()
     nouns()
     adjectives()
-    print("Lets make the next noun plural!")
+    print(colors.grey,"\nLets make the next noun plural!")
     nouns()
-    print("Lets make the next 2 verbs past tense!")
+    print(colors.grey,"\nLets make the next 2 verbs past tense!")
     verbs()
     verbs()
     adjectives()
     adjectives()
-    print("Lets make the next noun plural!")
+    print(colors.grey,"\nLets make the next noun plural!")
     nouns()
 
-#running = True
-#while running:
-#    enter = user_input("Press enter to continue: ")
-#    running = #insert more code
+running = True
+while running:
+    enter = user_input("Press enter to continue: \n\n")
+    running = run()
 
-print(story % tuple(madlibs))
+print("\n\n", colors.green, "Wonderful!\nHere is your story!\n")
+print("\n\n",colors.pink,story % tuple(madlibs))
 
