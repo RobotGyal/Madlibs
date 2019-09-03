@@ -1,3 +1,6 @@
+#2nd iteration
+
+
 #GLOBAL VARIABLES
 #a list containing the user inputs for call in the f-string of the story
 madlibs = ['one', 'two', 'three', 'four']
