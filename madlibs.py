@@ -3,12 +3,11 @@
 madlibs = []
 
 #the core story which will have gaps for insertion
-#a story originally written by Aesop
-story = """A %s was driving a wagon along a country lane, when the %s sank down deep into a rut.
- The %s driver, stupefied and aghast, stood looking at the wagon, and did nothing but utter loud cries to Hercules to come and help him.
- Hercules, it is said, appeared and thus addressed him:
- \'Put your shoulders to the wheels, my man. Goad on your bullocks, and never more pray to me for help,
-until you have done your best to help yourself, or depend upon it you will henceforth pray in vain.\'""" 
+#a story originally written by Aesop - The Flies and the Honey
+story = """%s Flies were attracted to a jar of %s which had been overturned in a housekeeper's %s,
+ and placing their feet in it, ate %s. Their feet, however, became so smeared with the honey that they could not use their %s,
+ nor release themselves, and were %s. Just as they were expiring, they %s, \"O %s creatures that we are,
+ for the sake of a %s pleasure we have destroyed %s.\" \nMoral: Pleasure bought with pains, hurts""" 
 
 #FUNCTIONS
 #reads user input
@@ -40,17 +39,22 @@ def nums():
     new_num = user_input("Please input a number: ")
     add(int(new_num))
 
-
-
-
-#TEST FUNCTION
-print("Welcome to Mad Libs!\nLet's begin\nPlease follow the following prompts")
-nouns()
-nouns()
-nouns()
-
-
-
+#run
+def run():
+    print("Welcome to Mad Libs!\nLet's begin\nPlease follow the following prompts")
+    nums()
+    nouns()
+    nouns()
+    adjectives()
+    print("Lets make the next noun plural!")
+    nouns()
+    print("Lets make the next 2 verbs past tense!")
+    verbs()
+    verbs()
+    adjectives()
+    adjectives()
+    print("Lets make the next noun plural!")
+    nouns()
 
 #running = True
 #while running:

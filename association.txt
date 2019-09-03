@@ -1,12 +1,12 @@
 F String Associations
 
-0 = noun
-1 = verb
-2 = adjective
-3 = 
-4 = 
-5 = 
-6 = 
-7 = 
-8 = 
-9 = 
+0 = int
+1 = noun
+2 = noun
+3 = adjective
+4 = noun (plural)
+5 = verb (past tense)
+6 = verb (past tense)
+7 = adjective
+8 = adjective
+9 = noun (plural)
